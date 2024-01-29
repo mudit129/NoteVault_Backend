@@ -96,7 +96,7 @@ router.post('/login',
             
         } catch (error) {
             console.error(error.message);
-            res.status(500).send("Internal Server error");
+            res.status(500).send({error:"Internal Server error"});
         }
 });
 
